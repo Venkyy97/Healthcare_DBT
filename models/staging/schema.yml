@@ -1,0 +1,11 @@
+version: 2
+
+models:
+  - name: stg_covid_conditions
+    description: "Staging model for COVID conditions"
+    columns:
+      - name: patient_id
+        description: "Each condition must belong to a patient"
+        tests:
+          - not_null
+
